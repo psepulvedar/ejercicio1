@@ -75,22 +75,6 @@ nav
 	padding: 0 0.5em;
 	position: relative;
 }
-nav ul #publicar_nav
-{
-	position: absolute;
-	top: -0.3em;
-	right: 0;
-}
-nav ul #publicar_nav a
-{
-	background: #22BCE0;
-	padding: 0.8em 0.5em;
-	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
-	font-style: italic;
-	border-radius: 5px;
-	text-decoration: none;
-	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
-}
 nav ul
 {
 	list-style: none;
@@ -108,6 +92,23 @@ nav ul li a
 	display: block;
 	padding: 0.5em 0;
 }
+nav ul #publicar_nav
+{
+	position: absolute;
+	top: -0.3em;
+	right: 0;
+}
+nav ul #publicar_nav a
+{
+	background: #22BCE0;
+	padding: 0.8em 0.5em;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+	font-style: italic;
+	border-radius: 5px;
+	text-decoration: none;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+}
+
 #contenido
 {
 	margin: 1em;
@@ -116,7 +117,9 @@ nav ul li a
 {
 	background: white;
 	border-bottom: 3px solid #22BCE0;
-	overflow: hidden;
+	margin-bottom: 3em;
+	min-height: 128px;
+	position: relative;
 }
 #contenido .item .autor_item
 {
@@ -152,21 +155,32 @@ nav ul li a
 }
 #contenido .item .titulo_item
 {
+	padding-top: 1em;
 	font-size: 1.2em;
 	font-style: italic;
 }
 #contenido .item .titulo_item a
 {
-	color: $444;
+	color: #444;
 	text-decoration: none;
 }
 #contenido .item .votacion
 {
-	border: 1px solid red;
-	left: 0;
+	background: white;
+	border-radius: 0 0 0.5em 0.5em;
+	left: 3%;
+	margin-top: 3px;
+	padding: 0.5em 1em;
 	position: absolute;
-	top: 0;
+	right: 3%;
+	top: 100%;
 }
+#contenido .item .votacion .comentarios_item,
+#contenido .item .votacion .guardar_item
+{
+	float: right;
+}
+
 
 
 
